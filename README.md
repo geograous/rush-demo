@@ -16,6 +16,20 @@ rushx dev
 
 ```
 
+### 部署项目
+
+1. 执行子项目的部署命令
+```shell
+# 安装依赖
+rush install
+# 运行 app1 子项目
+cd apps/app1
+# 执行子项目中的部署命令
+rushx build
+
+```
+2. 修改 nginx 配置
+
 ### 添加子应用
 
 1. 依次执行以下命令
@@ -34,6 +48,9 @@ rm -f yarn.lock .npmrc .gitattributes .gitignore
 ```
 2. 修改 rush 配置
 在 rush.json 中添加相关配置，其中 projectName 和 package.json 中的 name 保持一致。
+
+### 注意事项
+ - 不要使用 yarn/npm/pnpm 命令，统一使用 rush/rushx
 
 #### 参考
 [rush 文档](https://rushjs.io/zh-cn/pages/intro/welcome/)
