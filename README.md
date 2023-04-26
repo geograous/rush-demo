@@ -51,6 +51,7 @@ rm -f yarn.lock .npmrc .gitattributes .gitignore
 
 ### 注意事项
  - 不要使用 yarn/npm/pnpm 命令，统一使用 rush/rushx
+ - yarn 不支持 workspace，如果需要支持，就需要切换成 pnpm
 
 #### 参考
 [rush 文档](https://rushjs.io/zh-cn/pages/intro/welcome/)
