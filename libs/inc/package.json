@@ -2,7 +2,14 @@
   "name": "inc",
   "version": "1.0.0",
   "main": "index.js",
+  "module": "index.ts",
+  "scripts": {
+    "build": "tsc index.ts "
+  },
   "private": true,
   "license": "MIT",
-  "client": "yarn"
+  "client": "yarn",
+  "dependencies": {
+    "typescript": "^5.0.4"
+  }
 }

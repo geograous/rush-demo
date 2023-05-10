@@ -1,5 +1,7 @@
 ### 前提条件
 
+node 版本要求为  `>=12.13.0 <13.0.0 || >=14.15.0 <15.0.0 || >=16.13.0 <17.0.0 || >=18.0.0`
+
 - 安装 rush `npm install -g @microsoft/rush`
 
   
@@ -49,9 +51,12 @@ rm -f yarn.lock .npmrc .gitattributes .gitignore
 2. 修改 rush 配置
 在 rush.json 中添加相关配置，其中 projectName 和 package.json 中的 name 保持一致。
 
+3. 执行 rush update
+
 ### 注意事项
  - 不要使用 yarn/npm/pnpm 命令，统一使用 rush/rushx
  - yarn 不支持 workspace，如果需要支持，就需要切换成 pnpm
+ - 如果遇到问题，大概率是依赖包的问题，推荐删除 node_modules 重新执行 rush update
 
 #### 参考
 [rush 文档](https://rushjs.io/zh-cn/pages/intro/welcome/)

@@ -10,12 +10,12 @@
 <script setup lang="ts">
 import {ref} from 'vue'
 // yarn 只能够使用第三方包，不支持 workspace
-// import {inc} from 'inc'
+import {inc as _inc} from 'inc'
 
 const count = ref(0)
 
 const inc = () => {
-  count.value = count.value+1
+  count.value = _inc(count.value)
 }
 
 </script>
