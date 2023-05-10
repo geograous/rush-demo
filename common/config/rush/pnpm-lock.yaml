@@ -61,7 +61,10 @@ importers:
       vue-tsc: 1.6.4_typescript@4.8.4
 
   ../../libs/inc:
-    specifiers: {}
+    specifiers:
+      typescript: ~4.8.4
+    dependencies:
+      typescript: 4.8.4
 
 packages:
 
@@ -4232,7 +4235,6 @@ packages:
     resolution: {integrity: sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==}
     engines: {node: '>=4.2.0'}
     hasBin: true
-    dev: true
 
   /ufo/1.1.2:
     resolution: {integrity: sha512-TrY6DsjTQQgyS3E3dBaOXf0TpPD8u9FVrVYmKVegJuFw51n/YB9XPt+U6ydzFG5ZIN7+DIjPbNmXoBj9esYhgQ==}

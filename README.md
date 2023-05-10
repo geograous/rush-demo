@@ -56,7 +56,7 @@ rm -f yarn.lock .npmrc .gitattributes .gitignore
 ### 注意事项
  - 不要使用 yarn/npm/pnpm 命令，统一使用 rush/rushx
  - yarn 不支持 workspace，如果需要支持，就需要切换成 pnpm
- - 如果遇到问题，大概率是依赖包的问题，推荐删除 node_modules 重新执行 rush update
+ - 如果遇到依赖包问题，推荐删除 node_modules, common/temp, 再执行 rush update
 
 #### 参考
 [rush 文档](https://rushjs.io/zh-cn/pages/intro/welcome/)
